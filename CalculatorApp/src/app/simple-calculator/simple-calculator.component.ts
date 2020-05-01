@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class SimpleCalculatorComponent implements OnInit {
 
   constructor() { }
+  
+  DisplayValue: number;
 
   ngOnInit(): void {
+    this.DisplayValue = 0;
+  }
   }
 
 }
