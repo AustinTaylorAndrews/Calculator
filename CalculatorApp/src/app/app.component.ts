@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SimpleCalculatorComponent } from './simple-calculator/simple-calculator.component';
 
 @Component({
   selector: 'app-root',
