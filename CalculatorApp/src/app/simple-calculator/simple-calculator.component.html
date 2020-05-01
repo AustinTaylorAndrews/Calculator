@@ -4,29 +4,29 @@
 </div>
 
 <p>
-    <button class='button-operation button-clear'>CE</button>
-    <button class='button-operation'>/</button>
+    <button (click)="ResetState()" class='button-operation button-clear'>CE</button>
+    <button (click)="ClickOperation('/')" class='button-operation'>/</button>
 </p>
 <p>
-    <button class='button-numeric'>7</button>
-    <button class='button-numeric'>8</button>
-    <button class='button-numeric'>9</button>
-    <button class='button-operation'>x</button>
+    <button (click)="ClickNumber(7)" class='button-numeric'>7</button>
+    <button (click)="ClickNumber(8)" class='button-numeric'>8</button>
+    <button (click)="ClickNumber(9)" class='button-numeric'>9</button>
+    <button (click)="ClickOperation('x')" class='button-operation'>x</button>
 </p>
 <p>
-    <button class='button-numeric'>4</button>
-    <button class='button-numeric'>5</button>
-    <button class='button-numeric'>6</button>
-    <button class='button-operation'>-</button>
+    <button (click)="ClickNumber(4)" class='button-numeric'>4</button>
+    <button (click)="ClickNumber(5)" class='button-numeric'>5</button>
+    <button (click)="ClickNumber(6)" class='button-numeric'>6</button>
+    <button (click)="ClickOperation('-')" class='button-operation'>-</button>
 </p>
 <p>
-    <button class='button-numeric'>1</button>
-    <button class='button-numeric'>2</button>
-    <button class='button-numeric'>3</button>
-    <button class='button-operation'>+</button>
+    <button (click)="ClickNumber(1)" class='button-numeric'>1</button>
+    <button (click)="ClickNumber(2)" class='button-numeric'>2</button>
+    <button (click)="ClickNumber(3)" class='button-numeric'>3</button>
+    <button (click)="ClickOperation('+')" class='button-operation'>+</button>
 </p>
 <p>
-    <button class='button-numeric'>+/-</button>
-    <button class='button-numeric button-offset'>0</button>
-    <button class='button-equals'>=</button>
+    <button (click)="Negate()" class='button-numeric'>+/-</button>
+    <button (click)="ClickNumber(0)" class='button-numeric button-offset'>0</button>
+    <button (click)="ClickEquals()" class='button-equals'>=</button>
 </p>
